@@ -26,6 +26,7 @@ header {
     height: 200px;
 }
 
+h1,
 h2 {
     font-family: 'Playfair Display', serif;
 }
@@ -35,14 +36,64 @@ footer {
 }
 
 @media (max-width:500px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
     header {
         display: flex;
-        justify-content: space-around;
+
+    }
+
+    .caja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 0 50px;
+
+    }
+
+    .nombre {
+        font-size: 20px;
     }
 
     .presentacion {
-        margin: 56px 78px 0 0;
+        margin: 10px 0 0 0;
 
+    }
+
+    .presentacion ul {
+        list-style: none;
+        font-size: 13px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    h2 {
+        background-color: rgba(175, 248, 116, 0.726);
+        margin: 5px 0 5px 0;
+    }
+    /* .experiencia, .experiencia2 {
+        margin: 10px 0 0 0;
+    } */
+  .estudios{
+    margin: 10px 0 10px 0;
+  }
+
+
+    .descripcion ul li , .descripcion2 ul li {
+         /* background-color: cyan;  */
+         /* list-style: none; */
+        list-style-type: square;
+        /* list-style-position: inside; */
+
+    }
+    .descripcion ul ,.descripcion2 ul{
+        margin-left: 20px;
     }
 
     .redes {
